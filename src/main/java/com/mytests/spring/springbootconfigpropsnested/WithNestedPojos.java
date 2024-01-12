@@ -48,6 +48,7 @@ public class WithNestedPojos {
         public void setNestedStr(String nestedStr) {
             this.nestedStr = nestedStr;
         }
+
         public static class Deep{
             String deepNestedStr;
             Deeper deeper;

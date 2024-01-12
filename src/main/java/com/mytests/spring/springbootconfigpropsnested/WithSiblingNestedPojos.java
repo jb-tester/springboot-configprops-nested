@@ -1,6 +1,7 @@
 package com.mytests.spring.springbootconfigpropsnested;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
 // here the properties defined in the inner class have the type of another inner class
 // that is the property class's sibling
@@ -10,6 +11,7 @@ public class WithSiblingNestedPojos {
 
     String topStr;
 
+    //@NestedConfigurationProperty
     Nested1 nested1;
 
     public Nested1 getNested() {
@@ -31,6 +33,7 @@ public class WithSiblingNestedPojos {
     public static class Nested1 {
 
         String nested1str;
+        //@NestedConfigurationProperty
         Nested2 nested2;
 
         public Nested2 getNested2() {
